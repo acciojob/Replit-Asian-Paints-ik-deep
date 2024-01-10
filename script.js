@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.getElementById('change_button').addEventListener('click', function() {
     const blockId = document.getElementById('block_id').value;
     const color = document.getElementById('color_id').value;
@@ -13,8 +12,11 @@ document.getElementById('change_button').addEventListener('click', function() {
     gridItems.forEach(item => {
       item.style.backgroundColor = 'transparent';
     });
-  
+  if(color)
+  {
     gridItem.style.backgroundColor = color;
+  }
+    
   });
   
   document.getElementById('reset_button').addEventListener('click', function() {
